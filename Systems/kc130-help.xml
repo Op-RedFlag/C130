@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <title>KC130 Hercules</title>
+  <line>______________________________________________</line>
+  <key>
+    <name>D</name>
+    <desc>Open/Close backdoor</desc>
+  </key>
+  <key>
+    <name>d</name>
+    <desc>Open/Close crew door</desc>
+  </key>
+  <key>
+    <name>O</name>
+    <desc>operate drogue</desc>
+  </key>
+  
+</PropertyList>

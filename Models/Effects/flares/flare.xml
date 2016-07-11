@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <animation>
+    <type>range</type>
+    <min-m>0</min-m>
+    <max-m>2000</max-m>
+  </animation>
+
+  <particlesystem>
+    <name>flame</name>
+  
+    <texture>flame.png</texture>
+    <emissive>true</emissive>
+    <lighting>false</lighting>
+       
+    <offsets>
+      <x-m> 0.0 </x-m>
+      <y-m> 0.0 </y-m>
+      <z-m> 0.5 </z-m>
+    </offsets>
+           
+    <attach>local</attach>
+           
+    <placer>
+      <type>point</type>
+    </placer>
+           
+    <shooter>
+      <speed-mps>
+        <value>  0.7 </value>
+        <spread> 0.1 </spread>
+      </speed-mps>
+    </shooter>
+       
+    <counter>
+      <particles-per-sec>
+        <value>  8.0 </value>
+        <spread> 0.3 </spread>
+      </particles-per-sec>
+    </counter>
+           
+    <align>billboard</align>
+           
+    <particle>
+      <start>
+        <color>
+          <red><value>   1 </value></red>
+          <green><value> 1 </value></green>
+          <blue><value>  1 </value></blue>
+          <alpha><value> 1 </value></alpha>
+        </color>
+        <size>
+          <value>2</value>
+        </size>
+      </start>
+
+      <end>
+        <color>
+          <red><value>   0.5 </value></red>
+          <green><value> 0.5 </value></green>
+          <blue><value>  0.5 </value></blue>
+          <alpha><value> 0.0 </value></alpha>
+        </color>
+        <size>
+          <value>  2.2 </value>
+          <spread> 1.0 </spread>
+        </size>
+      </end>
+    
+      <life-sec>
+        <value> 0.5 </value>
+      </life-sec>
+
+      <mass-kg> 610 </mass-kg>
+      <radius-m>  1 </radius-m> <!-- 5 -->
+    </particle>
+           
+    <program>
+      <fluid>   air  </fluid>
+      <gravity> true </gravity>
+      <wind>    true </wind>
+    </program>
+           
+  </particlesystem>
+
+</PropertyList>

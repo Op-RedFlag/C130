@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+  
+  <path>armament-panel.ac</path>
+  
+  <animation>
+    <object-name>mount</object-name>
+    <object-name>bkg-cylinders</object-name>
+    <object-name>rds-rem-bkg</object-name>
+    <object-name>stations-lt-off</object-name>
+    <object-name>master-arm-switch</object-name>
+    <object-name>eo-pwr-switch</object-name>
+    <object-name>gun-rate-switch</object-name>
+    <object-name>aim-9-knob</object-name>
+    <object-name>mech-fuzing-knob</object-name>
+    <object-name>release-mode-knob</object-name>
+    <object-name>jettison</object-name>
+    <object-name>aim-9-light</object-name>
+    <object-name>test-lamp-button</object-name>
+    <object-name>panel-lights-knob</object-name>
+    <object-name>rds-rem-reset-button</object-name>
+    <object-name>rds-rem-x1</object-name>
+    <object-name>rds-rem-x10</object-name>
+    <object-name>rds-rem-x100</object-name>
+    <object-name>rds-rem-x1000</object-name>
+    <object-name>rip-qty-x1</object-name>
+    <object-name>rip-qty-x10</object-name>
+    <object-name>rip-intvl-x1</object-name>
+    <object-name>rip-intvl-x10</object-name>
+    <object-name>fake-wheels</object-name>
+    
+    <object-name>s1-load</object-name>
+    <object-name>s2-load</object-name>
+    <object-name>s3-load</object-name>
+    <object-name>s4-load</object-name>
+    <object-name>s5-load</object-name>
+    <object-name>s6-load</object-name>
+    <object-name>s7-load</object-name>
+    <object-name>s8-load</object-name>
+    <object-name>s9-load</object-name>
+    <object-name>s10-load</object-name>
+    <object-name>s11-load</object-name>
+    
+    <object-name>jett_sel</object-name>
+    <object-name>jett_sel.001</object-name>
+    <object-name>jett_sel.002</object-name>
+    <object-name>jett_sel.003</object-name>
+    
+    <object-name>jett_sel.004</object-name>
+    <object-name>jett_sel.005</object-name>
+    <object-name>jett_sel.006</object-name>
+    <object-name>jett_sel.007</object-name>
+    
+    <object-name>jett_sel.008</object-name>
+    <object-name>jett_sel.009</object-name>
+    <object-name>jett_sel.010</object-name>
+    <object-name>jett_sel.011</object-name>
+    
+    <object-name>jett_sel.012</object-name>
+    <object-name>jett_sel.013</object-name>
+    <object-name>jett_sel.014</object-name>
+    <object-name>jett_sel.015</object-name>
+    
+    <object-name>jett_sel.016</object-name>
+    <object-name>jett_sel.017</object-name>
+    <object-name>jett_sel.018</object-name>
+    <object-name>jett_sel.019</object-name>
+    
+    <object-name>jett_sel.020</object-name>
+    <object-name>jett_sel.021</object-name>
+    <object-name>jett_sel.022</object-name>
+    <object-name>jett_sel.023</object-name>
+    
+    <object-name>jett_sel.024</object-name>
+    <object-name>jett_sel.025</object-name>
+    <object-name>jett_sel.026</object-name>
+    <object-name>jett_sel.027</object-name>
+    
+    <object-name>jett_sel.028</object-name>
+    <object-name>jett_sel.029</object-name>
+    <object-name>jett_sel.030</object-name>
+    <object-name>jett_sel.031</object-name>
+    
+    <object-name>jett_sel.032</object-name>
+    <object-name>jett_sel.033</object-name>
+    <object-name>jett_sel.034</object-name>
+    <object-name>jett_sel.035</object-name>
+    
+    <object-name>jett_sel.036</object-name>
+    <object-name>jett_sel.037</object-name>
+    <object-name>jett_sel.038</object-name>
+    <object-name>jett_sel.039</object-name>
+    
+    <object-name>jett_sel.040</object-name>
+    <object-name>jett_sel.041</object-name>
+    <object-name>jett_sel.042</object-name>
+    <object-name>jett_sel.043</object-name>
+  </animation>
+  
+  <animation>
+    <name>lights</name>
+    <object-name>jett_sel</object-name>
+    <object-name>jett_sel.001</object-name>
+    <object-name>jett_sel.002</object-name>
+    <object-name>jett_sel.003</object-name>
+
+    <object-name>jett_sel.004</object-name>
+    <object-name>jett_sel.005</object-name>
+    <object-name>jett_sel.006</object-name>
+    <object-name>jett_sel.007</object-name>
+    
+    <object-name>jett_sel.008</object-name>
+    <object-name>jett_sel.009</object-name>
+    <object-name>jett_sel.010</object-name>
+    <object-name>jett_sel.011</object-name>
+    
+    <object-name>jett_sel.012</object-name>
+    <object-name>jett_sel.013</object-name>
+    <object-name>jett_sel.014</object-name>
+    <object-name>jett_sel.015</object-name>
+    
+    <object-name>jett_sel.016</object-name>
+    <object-name>jett_sel.017</object-name>
+    <object-name>jett_sel.018</object-name>
+    <object-name>jett_sel.019</object-name>
+    
+    <object-name>jett_sel.020</object-name>
+    <object-name>jett_sel.021</object-name>
+    <object-name>jett_sel.022</object-name>
+    <object-name>jett_sel.023</object-name>
+    
+    <object-name>jett_sel.024</object-name>
+    <object-name>jett_sel.025</object-name>
+    <object-name>jett_sel.026</object-name>
+    <object-name>jett_sel.027</object-name>
+    
+    <object-name>jett_sel.028</object-name>
+    <object-name>jett_sel.029</object-name>
+    <object-name>jett_sel.030</object-name>
+    <object-name>jett_sel.031</object-name>
+    
+    <object-name>jett_sel.032</object-name>
+    <object-name>jett_sel.033</object-name>
+    <object-name>jett_sel.034</object-name>
+    <object-name>jett_sel.035</object-name>
+    
+    <object-name>jett_sel.036</object-name>
+    <object-name>jett_sel.037</object-name>
+    <object-name>jett_sel.038</object-name>
+    <object-name>jett_sel.039</object-name>
+    
+    <object-name>jett_sel.040</object-name>
+    <object-name>jett_sel.041</object-name>
+    <object-name>jett_sel.042</object-name>
+    <object-name>jett_sel.043</object-name>
+  </animation>
+  
+  <animation>
+    <type>select</type>
+    <object-name>lights</object-name>
+    <condition>
+      <property>power/on</property>
+    </condition>
+  </animation>
+  
+  <animation>
+    <type>pick</type>
+    <object-name>master-arm-switch</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-toggle</command>
+        <property>master/armed</property>
+        <value> 0 </value>
+        <value> 1 </value>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>master-arm-switch</object-name>
+    <property>master/armed</property>
+    <factor> 30 </factor>
+    <center>
+      <x-m> 0.0029 </x-m>
+      <y-m> 0.0948 </y-m>
+      <z-m> 0.0575 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>pick</type>
+    <object-name>eo-pwr-switch</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-toggle</command>
+        <property>power/on</property>
+        <value> 0 </value>
+        <value> 1 </value>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>eo-pwr-switch</object-name>
+    <property>power/on</property>
+    <factor> 30 </factor>
+    <center>
+      <x-m> 0.0029 </x-m>
+      <y-m> 0.0948 </y-m>
+      <z-m> 0.0575 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>pick</type>
+    <object-name>gun-rate-switch</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/model/weapons/gun-rate-switch</property>
+        <value> 0 </value>
+        <value> 1 </value>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
+    <object-name>gun-rate-switch</object-name>
+    <type>rotate</type>
+    <property>sim/model/weapons/gun-rate-switch</property>
+    <factor> 30 </factor>
+    <center>
+      <x-m>  0.0031 </x-m>
+      <y-m> -0.0929 </y-m>
+      <z-m>  0.0575 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>pick</type>
+    <object-name>aim-9-knob</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/model/weapons/dual-AIM-9/aim9-knob</property>
+        <value> 0 </value>
+        <value> 1 </value>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>aim-9-knob</object-name>
+    <property>sim/model/weapons/dual-AIM-9/aim9-knob</property>
+    <factor> 45 </factor>
+    <center>
+      <x-m>  0.0031 </x-m>
+      <y-m> -0.0535 </y-m>
+      <z-m> -0.0628 </z-m>
+    </center>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>pick</type>
+    <object-name>release-mode-knob</object-name>
+    <object-name>jettison</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-toggle</command>
+        <property>flares/select</property>
+        <value> 0 </value>
+        <value> 1 </value>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>release-mode-knob</object-name>
+    <object-name>jettison</object-name>
+    <property>flares/select</property>
+    <factor>135</factor>
+    <center>
+      <x-m>  0.01998 </x-m>
+      <y-m> -0.00127 </y-m>
+      <z-m> -0.05440 </z-m>
+    </center>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>select</type>
+    <object-name>rds-rem-x1</object-name>
+    <condition>
+      <property>power/on</property>
+    </condition>
+  </animation>
+  
+  <animation>
+    <type>select</type>
+    <object-name>rds-rem-x10</object-name>
+    <condition>
+      <property>power/on</property>
+    </condition>
+  </animation>
+  
+  <animation>
+    <type>select</type>
+    <object-name>rds-rem-x100</object-name>
+    <condition>
+      <property>power/on</property>
+    </condition>
+  </animation>
+  
+  <animation>
+    <type>select</type>
+    <object-name>rds-rem-x1000</object-name>
+    <condition>
+      <property>power/on</property>
+    </condition>
+  </animation>
+  
+  <animation>
+    <type>textranslate</type>
+    <object-name>rds-rem-x1</object-name>
+    <property>ai/submodels/submodel[1]/count</property>
+    <factor> 0.1 </factor>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>textranslate</type>
+    <object-name>rds-rem-x10</object-name>
+    <property>ai/submodels/submodel[1]/count</property>
+    <factor> 0.01 </factor>
+    <step> 10 </step>
+    <scroll> 0.5 </scroll>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>textranslate</type>
+    <object-name>rds-rem-x100</object-name>
+    <property>ai/submodels/submodel[1]/count</property>
+    <factor> 0.001 </factor>
+    <step> 100 </step>
+    <scroll> 0.5 </scroll>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+  
+  
+  <animation>
+    <type>textranslate</type>
+    <object-name>rds-rem-x1000</object-name>
+    <property>ai/submodels/submodel[1]/count</property>
+    <factor> 0.0001 </factor>
+    <step> 1000 </step>
+    <scroll> 0.5 </scroll>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>range</type>
+    <min-m>  0 </min-m>
+    <max-m> 30 </max-m>
+  </animation>
+  
+</PropertyList>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>keyboard.ac</path>
+  
+  <animation>
+    <object-name>base</object-name>
+    <object-name>cache</object-name>
+    <object-name>keys</object-name>
+    <object-name>leds</object-name>
+  </animation>
+
+</PropertyList>

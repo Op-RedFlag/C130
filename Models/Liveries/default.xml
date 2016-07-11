@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+  
+  <sim>
+    
+    <model>
+      <livery>
+        <name type="string">Default</name>
+        <texture>texture.png</texture>
+        <emission>
+          <red>   0.2 </red>
+          <green> 0.2 </green>
+          <blue>  0.2 </blue>
+        </emission>
+      </livery>
+    </model>
+    
+  </sim>
+  
+</PropertyList>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>comp.ac</path>
+  
+  <animation>
+    <object-name>base</object-name>
+    <object-name>cache</object-name>
+    <object-name>switch</object-name>
+    <object-name>screen</object-name>
+  </animation>
+
+</PropertyList>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList> 
+
+  <path>bofor.ac</path>
+
+  <animation>
+    <object-name>bofors</object-name>
+    <object-name>barrel</object-name>
+  </animation> 
+  
+  <animation>
+    <type>translate</type>
+    <object-name>barrel</object-name>
+    <property>controls/armament/trigger1</property>
+    <factor>1</factor>
+    <axis>
+      <x> -0.4 </x>
+      <y>  0.0 </y>
+      <z>  0.0 </z>
+    </axis>
+  </animation> 
+
+</PropertyList>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>altimeter.ac</path>
+
+  <animation>
+    <object-name>fond</object-name>
+    <object-name>face</object-name>
+    <object-name>button</object-name>
+    <object-name>Needle1</object-name>
+    <object-name>Needle2</object-name>
+    <object-name>Needle3</object-name>
+    <object-name>PressureDial</object-name>
+
+    <object-name>vitre</object-name>
+  </animation>
+
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Aircraft/C130/Models/Effects/Glass/glass</inherits-from>
+    <object-name>vitre</object-name>
+  </effect>
+  
+  <animation>
+    <type>material</type>
+    <object-name>face</object-name>
+    <object-name>button</object-name>
+    <object-name>Needle1</object-name>
+    <object-name>Needle2</object-name>
+    <object-name>Needle3</object-name>
+    <object-name>PressureDial</object-name>
+    <emission>
+      <!-- <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop> -->
+      <red>   0.50 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
+    </emission>
+  </animation>    
+
+  <animation>
+    <type>rotate</type>
+    <object-name>Needle1</object-name>
+    <property>/instrumentation/altimeter/indicated-altitude-ft</property>
+    <factor> 0.36 </factor>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>Needle2</object-name>
+    <property>/instrumentation/altimeter/indicated-altitude-ft</property>
+    <factor> 0.036 </factor>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>Needle3</object-name>
+    <property>/instrumentation/altimeter/indicated-altitude-ft</property>
+    <factor> 0.0036 </factor>
+    <axis>
+     <x> -1 </x>
+     <y>  0 </y>
+     <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>PressureDial</object-name>
+    <property>/instrumentation/altimeter/setting-inhg</property>
+    <interpolation>
+      <entry><ind> 28.0 </ind><dep> -200 </dep></entry>
+      <entry><ind> 30.0 </ind><dep>    0 </dep></entry>
+      <entry><ind> 31.3 </ind><dep>  130 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+</PropertyList>

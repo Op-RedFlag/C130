@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!-- Lockheed C130 K Hercules. -->
+
+<PropertyList include="c130-base.xml">
+
+  <sim include="Systems/c130k-views.xml">
+
+    <description>C130 K Hercules (YASim)</description>
+    <author>BARANGER Emmanuel (3D/FDM), FABERT Didier (texture), Jettoo (FDM)</author>
+    <flight-model>yasim</flight-model>
+    <aero>c130k-yasim</aero>
+    <variant-of>c130</variant-of>
+    
+    <rating>
+      <FDM type="int">     2 </FDM>
+      <systems type="int"> 2 </systems>
+      <cockpit type="int"> 2 </cockpit>
+      <model type="int">   4 </model>
+    </rating>
+
+    <model>
+      <path>Aircraft/C130/Models/c130k.xml</path>
+      <start-idling type="bool">false</start-idling>
+      <livery>
+        <file type="string">default</file>
+      </livery>
+    </model>
+
+    <startup>
+      <splash-texture>Aircraft/C130/splash/c130k-splash.png</splash-texture>
+    </startup>
+
+    <sound>
+      <audible>true</audible>
+      <path>Aircraft/C130/Sounds/c130-sound.xml</path>
+    </sound>
+
+    <help include="Systems/c130k-help.xml"/>
+
+    <menubar include="Dialogs/c130k-menu.xml"/>
+
+  </sim>
+
+  <input>
+    <keyboard include="Systems/c130k-keyboard.xml"/>
+  </input>
+
+  <systems>
+    <refuel>
+      <type type="string">probe</type>
+    </refuel>
+  </systems>
+
+  <nasal>
+    <c130>
+      <file>Aircraft/C130/Nasal/paratroopers.nas</file>
+    </c130>
+  </nasal>
+
+</PropertyList>

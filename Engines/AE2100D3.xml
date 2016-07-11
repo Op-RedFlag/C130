@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+
+<!--
+  File:     AE2100D3.xml
+  Author:   AeromatiC++ v 3.3.0
+
+  See: http://wiki.flightgear.org/JSBSim_Engines#FGTurboprop
+
+  Inputs:
+    name:                   AE2100D3
+    type:                   Turboprop Engine
+    power:                  4637.0 hp
+    inlet temperature:      800.0 degrees C
+    overall pressure ratio: 16.6:1
+
+  Outputs:
+    psfc:                   0.454 lbs/hr/hp
+    engine weight:          2515.2 lbs
+    engine length:          11.1 ft
+    engine diameter:        3.1 ft
+-->
+
+<turboprop_engine name="AE2100D3">
+  <milthrust unit="LBS">       10386.9   </milthrust>
+  <idlen1>                       60.0   </idlen1>
+  <maxn1>                       100.0   </maxn1>
+  <maxpower unit="HP">         4637.0   </maxpower>
+  <psfc unit="LBS/HR/HP">         0.454 </psfc>
+  <n1idle_max_delay>              1     </n1idle_max_delay>
+  <maxstartingtime>              20     </maxstartingtime>
+  <startern1>                    20     </startern1>
+  <ielumaxtorque unit="FT*LB"> 18887.8   </ielumaxtorque>
+  <itt_delay>                     0.05  </itt_delay>
+  <betarangeend>                 64     </betarangeend>
+  <reversemaxpower>              60     </reversemaxpower>
+
+  <function name="EnginePowerVC">
+    <table>
+      <description> Engine power, function of airspeed and pressure </description>
+      <independentVar lookup="row">atmosphere/P-psf</independentVar>
+      <independentVar lookup="column">velocities/ve-kts</independentVar>
+      <tableData>
+              0      50    100    150    200    250
+        503   0.357  0.380  0.400  0.425  0.457  0.486
+       1048   0.586  0.589  0.600  0.621  0.650  0.686
+       1328   0.707  0.721  0.731  0.757  0.786  0.821
+       1496   0.779  0.786  0.808  0.821  0.857  0.900
+       1684   0.850  0.857  0.874  0.900  0.943  0.979
+       1896   0.914  0.929  0.946  0.971  1      1.057
+       2135   1      1.011  1.029  1.043  1.083  1.150
+       2213   1.029  1.043  1.057  1.079  1.114  1.171
+     </tableData>
+   </table>
+  </function>
+
+  <table name="EnginePowerRPM_N1" type="internal">
+    <description> Engine Power, function of RPM and N1 </description>
+    <tableData>
+              0       5       60      86      94      95      96      97      98      99     100     101
+      0.0     0.0     3.2     3.2     3.2     3.2     3.2     3.2     3.2     3.2     3.2     3.2     3.2
+    502.2     0.0     3.2   218.4  1248.3  2184.5  2371.4  2621.3  2870.8  3120.2  3307.6  3619.6  3869.6
+    751.9     0.0     3.2   187.3  1435.6  2496.6  2683.4  2933.4  3151.8  3432.3  3682.2  3994.3  4243.8
+   1003.0     0.0     3.2    31.1  1497.8  2746.0  2964.4  3182.8  3432.3  3713.3  3931.7  4243.8  4493.3
+   1254.1     0.0     0.5     0.5  1404.1  2808.6  3089.2  3276.5  3526.0  3807.0  4056.4  4368.5  4649.5
+   1379.6     0.0     0.5     0.5  1279.3  2746.0  2995.5  3213.9  3494.9  3775.9  4025.4  4337.4  4637.0
+    </tableData>
+  </table>
+
+  <table name="ITT_N1" type="internal">
+    <description> Inter-Turbine Temperature ITT [deg C] depending on N1 and engine run (0=off / 1=running) </description>
+    <tableData>
+              0     1
+        0     0     0
+       15   116.0   116.0
+       60   208.0   603.2
+       96   312.8   788.8
+      100   324.8   872.0
+    </tableData>
+  </table>
+
+  <table name="CombustionEfficiency_N1" type="internal">
+    <description>Dependency of fuel efficiency coefficient on N1 (and RPM)</description>
+    <tableData>
+      90    0.1221
+      91.2  0.2834
+      92.2  0.5336
+      93.4  0.7188
+      94.1  0.7741
+      95.2  0.8471
+      96.5  0.9001
+     100    1
+      </tableData>
+  </table>
+</turboprop_engine>

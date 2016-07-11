@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>gun_door.ac</path>
+  
+  <animation>
+    <object-name>blah</object-name>
+  </animation>
+  
+</PropertyList>

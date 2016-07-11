@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>bms.ac</path>
+  
+  <animation>
+    <object-name>Battle</object-name>
+    <object-name>Chairs</object-name>
+  </animation>
+
+  <model>
+    <path>Aircraft/C130/Models/Interior/ac130/armament/comp/comp.xml</path>
+    <offsets>
+      <x-m> -6.75595 </x-m>
+      <y-m>  0.67092 </y-m>
+      <z-m>  1.28502 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/C130/Models/Interior/ac130/armament/comp/comp.xml</path>
+    <offsets>
+      <x-m> -6.75585 </x-m>
+      <y-m> -0.05066 </y-m>
+      <z-m>  1.28502 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/C130/Models/Interior/ac130/armament/comp/comp.xml</path>
+    <offsets>
+      <x-m> -4.75621 </x-m>
+      <y-m> -0.32000 </y-m>
+      <z-m>  1.36149 </z-m>
+      <heading-deg> 90 </heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/C130/Models/Interior/ac130/armament/comp/comp.xml</path>
+    <offsets>
+      <x-m> -4.0000 </x-m>
+      <y-m> -0.3200 </y-m>
+      <z-m>  1.36149 </z-m>
+      <heading-deg> 90 </heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/C130/Models/Interior/ac130/armament/comp/comp.xml</path>
+    <offsets>
+      <x-m> -3.24379 </x-m>
+      <y-m> -0.32000 </y-m>
+      <z-m>  1.36149 </z-m>
+      <heading-deg> 90 </heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/C130/Models/Interior/ac130/armament/comp/comp.xml</path>
+    <offsets>
+      <x-m> -1.32122 </x-m>
+      <y-m>  0.42492 </y-m>
+      <z-m>  1.35614 </z-m>
+      <heading-deg> 180 </heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/C130/Models/Interior/ac130/armament/comp/comp.xml</path>
+    <offsets>
+      <x-m> -1.32122 </x-m>
+      <y-m>  1.07412 </y-m>
+      <z-m>  1.35614 </z-m>
+      <heading-deg> 180 </heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/C130/Models/Interior/ac130/armament/BMS/keyboard.xml</path>
+    <offsets>
+      <x-m> -6.62270 </x-m>
+      <y-m>  0.64911 </y-m>
+      <z-m>  0.93030 </z-m>
+      <roll-deg> 37 </roll-deg>
+      <heading-deg> 90 </heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/C130/Models/Interior/ac130/armament/BMS/keyboard.xml</path>
+    <offsets>
+      <x-m> -6.62270 </x-m>
+      <y-m> -0.07247 </y-m>
+      <z-m>  0.93030 </z-m>
+      <roll-deg> 37 </roll-deg>
+      <heading-deg> 90 </heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/C130/Models/Interior/ac130/armament/BMS/keyboard.xml</path>
+    <offsets>
+      <x-m> -4.76142 </x-m>
+      <y-m> -0.18630 </y-m>
+      <z-m>  0.99303 </z-m>
+      <roll-deg> 37 </roll-deg>
+      <heading-deg> 180 </heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/C130/Models/Interior/ac130/armament/BMS/keyboard.xml</path>
+    <offsets>
+      <x-m> -3.97819 </x-m>
+      <y-m> -0.18630 </y-m>
+      <z-m>  0.99303 </z-m>
+      <roll-deg> 37 </roll-deg>
+      <heading-deg> 180 </heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/C130/Models/Interior/ac130/armament/BMS/keyboard.xml</path>
+    <offsets>
+      <x-m> -3.21322 </x-m>
+      <y-m> -0.18630 </y-m>
+      <z-m>  0.99303 </z-m>
+      <roll-deg> 37 </roll-deg>
+      <heading-deg> 180 </heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/C130/Models/Interior/ac130/armament/BMS/keyboard.xml</path>
+    <offsets>
+      <x-m> -1.44829 </x-m>
+      <y-m>  0.81917 </y-m>
+      <z-m>  0.98860 </z-m>
+      <roll-deg> 37 </roll-deg>
+      <heading-deg> -90 </heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/C130/Models/Interior/ac130/armament/comp/topdisplay.xml</path>
+    <offsets>
+      <x-m> -6.54573 </x-m>
+      <y-m>  0.67092 </y-m>
+      <z-m>  1.67677 </z-m>
+      <pitch-deg> 63 </pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/C130/Models/Interior/ac130/armament/comp/topdisplay.xml</path>
+    <offsets>
+      <x-m> -6.54573 </x-m>
+      <y-m> -0.05066 </y-m>
+      <z-m>  1.67677 </z-m>
+      <pitch-deg> 63 </pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/C130/Models/Interior/ac130/armament/comp/topdisplay.xml</path>
+    <offsets>
+      <x-m> -4.75621 </x-m>
+      <y-m> -0.05066 </y-m>
+      <z-m>  1.77677 </z-m>
+      <pitch-deg> 63 </pitch-deg>
+      <heading-deg> 90 </heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/C130/Models/Interior/ac130/armament/comp/topdisplay.xml</path>
+    <offsets>
+      <x-m> -3.24379 </x-m>
+      <y-m> -0.05066 </y-m>
+      <z-m>  1.77677 </z-m>
+      <pitch-deg> 63 </pitch-deg>
+      <heading-deg> 90 </heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/C130/Models/Interior/ac130/armament/comp/topdisplay.xml</path>
+    <offsets>
+      <x-m> -1.59326 </x-m>
+      <y-m>  1.07412 </y-m>
+      <z-m>  1.77677 </z-m>
+      <pitch-deg> 63 </pitch-deg>
+      <heading-deg> 180 </heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/C130/Models/Interior/Panel/Instruments/weapons/armament-panel.xml</path>
+    <offsets>
+      <x-m> -4.00514 </x-m>
+      <y-m> -0.08852 </y-m>
+      <z-m>  1.73579 </z-m>
+      <pitch-deg> 64 </pitch-deg>
+      <heading-deg> 90 </heading-deg>
+    </offsets>
+  </model>
+  <!-- 25mm Gun Camera -->
+  
+  <model>
+    <path>Aircraft/C130/Models/Interior/ac130/Chairs/chair.xml</path>
+    <offsets>
+      <x-m> -5.91454 </x-m>
+      <y-m> -0.04714 </y-m>
+      <z-m>  0.69300 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/C130/Models/Interior/ac130/Chairs/chair.xml</path>
+    <offsets>
+      <x-m> -5.91454 </x-m>
+      <y-m>  0.70106 </y-m>
+      <z-m>  0.69300 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/C130/Models/Interior/ac130/Chairs/chair.xml</path>
+    <offsets>
+      <x-m> -4.75032 </x-m>
+      <y-m>  0.57488 </y-m>
+      <z-m>  0.69300 </z-m>
+      <heading-deg> 90 </heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/C130/Models/Interior/ac130/Chairs/chair.xml</path>
+    <offsets>
+      <x-m> -4.00008 </x-m>
+      <y-m>  0.57488 </y-m>
+      <z-m>  0.69300 </z-m>
+      <heading-deg> 90 </heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/C130/Models/Interior/ac130/Chairs/chair.xml</path>
+    <offsets>
+      <x-m> -3.24984 </x-m>
+      <y-m>  0.57488 </y-m>
+      <z-m>  0.69300 </z-m>
+      <heading-deg> 90 </heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/C130/Models/Interior/ac130/Chairs/chair.xml</path>
+    <offsets>
+      <x-m> -2.01450 </x-m>
+      <y-m>  0.81800 </y-m>
+      <z-m>  0.69300 </z-m>
+      <heading-deg> 180 </heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/C130/Models/Pilot/pilot.xml</path>
+    <offsets>
+      <x-m> -5.83536 </x-m>
+      <y-m>  0.70728 </y-m>
+      <z-m>  0.85543 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/C130/Models/Pilot/pilot.xml</path>
+    <offsets>
+      <x-m> -4.76291 </x-m>
+      <y-m>  0.64090 </y-m>
+      <z-m>  0.85543 </z-m>
+      <heading-deg> 90 </heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/C130/Models/Pilot/pilot.xml</path>
+    <offsets>
+      <x-m> -4.01296 </x-m>
+      <y-m>  0.64090 </y-m>
+      <z-m>  0.85543 </z-m>
+      <heading-deg> 90 </heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/C130/Models/Pilot/pilot.xml</path>
+    <offsets>
+      <x-m> -2.08486 </x-m>
+      <y-m>  0.81864 </y-m>
+      <z-m>  0.85543 </z-m>
+      <heading-deg> 180 </heading-deg>
+    </offsets>
+  </model>
+  
+</PropertyList>

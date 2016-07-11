@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- Island Virtual Airways Cargo C130 Livery by Michael Smith <mdsmith2@highland.net> -->
+
+<PropertyList>
+  
+  <sim>
+    
+    <model>
+      <livery>
+        <name type="string">Island Virtual Airways Cargo</name>
+        <texture>Liveries/1024x1024/IVA.png</texture>
+        <emission>
+          <red>   0.2 </red>
+          <green> 0.2 </green>
+          <blue>  0.2 </blue>
+        </emission>
+      </livery>
+    </model>
+    
+  </sim>
+  
+</PropertyList>

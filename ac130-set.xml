@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!-- Lockheed AC 130 Hercules. -->
+
+<PropertyList include="c130-base.xml">
+
+  <sim include="Systems/ac130-views.xml">
+
+    <description>AC-130 (YASim)</description>
+    <author>BARANGER Emmanuel (3D/FDM), FABERT Didier (texture), Jettoo (FDM), Jack Mermod (3D/AC-130 Transition)</author>
+    <flight-model>yasim</flight-model>
+    <aero>ac130-yasim</aero>
+    <variant-of>c130</variant-of>
+    
+    <rating>
+      <FDM type="int">     2 </FDM>
+      <systems type="int"> 2 </systems>
+      <cockpit type="int"> 2 </cockpit>
+      <model type="int">   4 </model>
+    </rating>
+
+    <model>
+      <path>Aircraft/C130/Models/ac130.xml</path>
+      <start-idling type="bool">false</start-idling>
+      <livery>
+        <file type="string">default</file>
+      </livery>
+    </model>
+
+    <startup>
+      <splash-texture>Aircraft/C130/splash/ac130-splash.png</splash-texture>
+    </startup>
+
+    <sound>
+      <audible>true</audible>
+      <path>Aircraft/C130/Sounds/ac130-sound.xml</path>
+    </sound>
+
+    <help include="Systems/ac130-help.xml"/>
+
+    <menubar include="Dialogs/ac130-menu.xml"/>
+
+  </sim>
+
+  <input>
+    <keyboard include="Systems/ac130-keyboard.xml"/>
+  </input>
+
+  <systems>
+    <refuel>
+      <type type="string">boom</type>
+    </refuel>
+  </systems>
+
+  <nasal>
+    <weapons>
+      <file>Aircraft/C130/Nasal/weapons.nas</file>
+    </weapons>
+  </nasal>
+
+</PropertyList>

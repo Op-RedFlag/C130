@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>propellerR.ac</path>
+ 
+  <animation>
+    <name>heliceD</name>
+    <object-name>pal1</object-name>   
+    <object-name>pal2</object-name>   
+    <object-name>pal3</object-name>   
+    <object-name>pal4</object-name>   
+    <object-name>bol</object-name>
+    
+    <object-name>propdisc</object-name>
+    <object-name>propblur</object-name>
+  </animation>   
+
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <object-name>propblur</object-name>
+    <object-name>propdisc</object-name>
+  </effect>
+  
+  <!-- Mise en place des pales par défaut -->
+  <animation>
+    <type>select</type>
+    <object-name>pal1</object-name>
+    <object-name>pal2</object-name>   
+    <object-name>pal3</object-name>
+    <object-name>pal4</object-name>
+    <condition>
+      <less-than>
+        <property>fdm/jsbsim/propulsion/engine[0]/engine-rpm</property>
+        <value>1000</value>
+      </less-than>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>pal1</object-name>
+    <property>controls/engines/engine[0]/propeller-pitch</property>
+    <factor> 62 </factor>
+    <axis>
+      <x>  0 </x>
+      <y>  0 </y>
+      <z> -1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>pal2</object-name>
+    <property>controls/engines/engine[0]/propeller-pitch</property>
+    <factor> 62 </factor>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>pal3</object-name>
+    <property>controls/engines/engine[0]/propeller-pitch</property>
+    <factor> 62 </factor>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+ 
+  <animation>
+    <type>rotate</type>
+    <object-name>pal4</object-name>
+    <property>controls/engines/engine[0]/propeller-pitch</property>
+    <factor> 62 </factor>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <!-- Sélection Pales/disque en fonction de "RPM" -->
+  <animation>
+    <type>select</type>
+    <object-name>propdisc</object-name>
+    <condition>
+      <greater-than>
+        <property>fdm/jsbsim/propulsion/engine[0]/engine-rpm</property>
+        <value>1000</value>
+      </greater-than>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>propblur</object-name>
+    <condition>
+    <and>
+      <greater-than>
+        <property>fdm/jsbsim/propulsion/engine[0]/engine-rpm</property>
+        <value>400.000</value>
+      </greater-than>
+      <less-than>
+        <property>fdm/jsbsim/propulsion/engine[0]/engine-rpm</property>
+        <value>1000.001</value>
+      </less-than>
+    </and>
+    </condition>
+  </animation>
+
+  <!-- Rotation de l'hélice -->
+  <animation>
+    <type>spin</type>
+    <object-name>heliceD</object-name>
+    <property>fdm/jsbsim/propulsion/engine[0]/engine-rpm</property>
+    <factor> -0.479 </factor>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+</PropertyList>

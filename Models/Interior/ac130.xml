@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <!-- Turret -->
+  <model>
+    <path>Aircraft/C130/Models/Interior/ac130/armament/gau12/turret.xml</path>
+    <offsets>
+      <x-m> -6.40 </x-m>
+      <y-m> -1.95 </y-m>
+      <z-m>  1.35 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- GAU-12 -->
+  <model>
+    <path>Aircraft/C130/Models/Interior/ac130/armament/gau12/gau12.xml</path>
+    <offsets>
+      <x-m> -6.25 </x-m>
+      <y-m> -1.85 </y-m>
+      <z-m>  1.35 </z-m> 
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/C130/Models/Interior/ac130/armament/gau12/gun_door.xml</path>
+    <offsets>
+      <x-m> -6.40 </x-m>
+      <y-m> -1.85 </y-m>
+      <z-m>  1.30 </z-m> 
+      <heading-deg> 180 </heading-deg>
+    </offsets>
+  </model>
+  
+  <!-- Turret #2 -->
+  <model>
+    <path>Aircraft/C130/Models/Interior/ac130/armament/gau12/turret.xml</path>
+    <offsets>
+      <x-m> -5.40 </x-m>
+      <y-m> -1.95 </y-m>
+      <z-m>  1.35 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- GAU-12 #2 -->
+  <model>
+    <path>Aircraft/C130/Models/Interior/ac130/armament/gau12/gau12.xml</path>
+    <offsets>
+      <x-m> -5.25 </x-m>
+      <y-m> -1.85 </y-m> 
+      <z-m>  1.35  </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/C130/Models/Interior/ac130/armament/gau12/gun_door.xml</path>
+    <offsets>
+      <x-m> -5.40 </x-m>
+      <y-m> -1.85 </y-m>
+      <z-m>  1.30   </z-m> 
+      <heading-deg> 180 </heading-deg>
+    </offsets>
+  </model>
+  
+  <!-- 40mm Cannon -->
+  <model>
+    <path>Aircraft/C130/Models/Interior/ac130/armament/40/bofor.xml</path>
+    <offsets>
+      <x-m>  3.623 </x-m> <!--  0.6 -->
+      <y-m> -0.850 </y-m> <!-- -2.4 -->
+      <z-m>  1.170 </z-m>
+      <pitch-deg>     5 </pitch-deg>
+      <heading-deg> -90 </heading-deg>
+    </offsets>
+  </model>
+  
+  <!-- Mount -->
+  <model>
+    <path>Aircraft/C130/Models/Interior/ac130/armament/gau12/mount.xml</path>
+    <offsets>
+      <x-m> -5.30 </x-m>
+      <y-m> -1.60 </y-m>
+      <z-m>  1.35 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- Mount #2 -->
+  <model>
+    <path>Aircraft/C130/Models/Interior/ac130/armament/gau12/mount.xml</path>
+    <offsets>
+      <x-m> -6.30 </x-m>
+      <y-m> -1.60 </y-m>
+      <z-m>  1.35 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- BMS -->
+  <model>
+    <path>Aircraft/C130/Models/Interior/ac130/BMSorig.xml</path>
+  </model>
+  
+</PropertyList>

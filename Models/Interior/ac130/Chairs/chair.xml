@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>chair.ac</path>
+  
+  <animation>
+    <object-name>chair</object-name>
+  </animation>
+
+</PropertyList>
