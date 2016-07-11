@@ -47,7 +47,7 @@
    <vtailarea unit="FT2">  313.56 </vtailarea>
    <vtailarm  unit="FT" >   48.95 </vtailarm>
    <location name="AERORP" unit="IN">
-     <x> 587.40 </x>
+     <x> 600.40 </x>
      <y>   0.00 </y>
      <z>   0.00 </z>
    </location>
@@ -69,7 +69,7 @@
    <izz unit="SLUG*FT2">   1722828 </izz>
    <emptywt unit="LBS" >     75562 </emptywt>
    <location name="CG" unit="IN">
-     <x> 587.40 </x>
+     <x> 600.40 </x>
      <y>   0.00 </y>
      <z> -29.37 </z>
    </location>
@@ -77,7 +77,7 @@
     <description> 40068 LBS + full (39370 LBS) fuel should bring model up to entered max weight</description>
     <weight unit="LBS">  20034.0 </weight>
     <location name="POINTMASS" unit="IN">
-      <x> 587.40 </x>
+      <x> 600.40 </x>
       <y>   0.00 </y>
       <z> -29.37 </z>
     </location>
@@ -90,7 +90,7 @@
    <location unit="IN">
      <x> 152.72 </x>
      <y>   0.00 </y>
-     <z> -140.98 </z>
+     <z> -39.98 </z>
    </location>
    <static_friction>  0.80 </static_friction>
    <dynamic_friction> 0.50 </dynamic_friction>
@@ -106,7 +106,7 @@
    <location unit="IN">
      <x> 610.90 </x>
      <y> -175.16 </y>
-     <z> -140.98 </z>
+     <z> -39.98 </z>
    </location>
    <static_friction>  0.80 </static_friction>
    <dynamic_friction> 0.50 </dynamic_friction>
@@ -122,7 +122,7 @@
    <location unit="IN">
      <x> 610.90 </x>
      <y> 175.16 </y>
-     <z> -140.98 </z>
+     <z> -39.98 </z>
    </location>
    <static_friction>  0.80 </static_friction>
    <dynamic_friction> 0.50 </dynamic_friction>
@@ -272,7 +272,7 @@
 
   <tank type="FUEL" number="0">
      <location unit="IN">
-       <x> 587.40 </x>
+       <x> 600.40 </x>
        <y>   0.00 </y>
        <z> -29.37 </z>
      </location>
@@ -282,7 +282,7 @@
 
   <tank type="FUEL" number="1">
      <location unit="IN">
-       <x> 587.40 </x>
+       <x> 600.40 </x>
        <y>   0.00 </y>
        <z> -29.37 </z>
      </location>
@@ -292,7 +292,7 @@
 
   <tank type="FUEL" number="2">
      <location unit="IN">
-       <x> 587.40 </x>
+       <x> 600.40 </x>
        <y>   0.00 </y>
        <z> -29.37 </z>
      </location>
@@ -302,7 +302,7 @@
 
   <tank type="FUEL" number="3">
      <location unit="IN">
-       <x> 587.40 </x>
+       <x> 600.40 </x>
        <y>   0.00 </y>
        <z> -29.37 </z>
      </location>
@@ -312,7 +312,7 @@
 
   <tank type="FUEL" number="4">
      <location unit="IN">
-       <x> 587.40 </x>
+       <x> 600.40 </x>
        <y>   0.00 </y>
        <z> -29.37 </z>
      </location>
@@ -505,7 +505,7 @@
       </domain>
       <range>
         <min> 0 </min>
-        <max> 1 </max>
+        <max> 1.5 </max>
       </range>
       <output>fcs/flap-pos-norm</output>
    </aerosurface_scale>
@@ -577,7 +577,7 @@
            <property>aero/qbar-psf</property>
            <property>metrics/Sw-sqft</property>
            <property>fcs/flap-pos-deg</property>
-           <value> 0.02000 </value>
+           <value> 0.02500 </value>
        </product>
     </function>
 
@@ -597,7 +597,7 @@
            <property>aero/qbar-psf</property>
            <property>metrics/Sw-sqft</property>
            <property>fcs/elevator-pos-rad</property>
-           <value>0.2</value>
+           <value>0.25</value>
        </product>
     </function>
 
@@ -614,9 +614,9 @@
             <independentVar lookup="row">aero/alpha-rad</independentVar>
             <tableData>
              -1.57    1.500
-             -0.26    0.033
-              0.00    0.025
-              0.26    0.033
+             -0.26    0.023
+              0.00    0.015
+              0.26    0.023
               1.57    1.500
             </tableData>
           </table>
@@ -629,7 +629,7 @@
            <property>aero/qbar-psf</property>
            <property>metrics/Sw-sqft</property>
            <property>aero/cl-squared</property>
-           <value>0.039</value>
+           <value>0.029</value>
          </product>
     </function>
 
@@ -704,7 +704,7 @@
            <property>aero/qbar-psf</property>
            <property>metrics/Sw-sqft</property>
            <abs><property>fcs/elevator-pos-norm</property></abs>
-           <value>0.04</value>
+           <value>0.03</value>
        </product>
     </function>
 
