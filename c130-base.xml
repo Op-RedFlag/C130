@@ -218,6 +218,9 @@
     <aar>
       <file>Aircraft/Generic/aar.nas</file>
     </aar>
-  </nasal>
+	<damage>
+		<file>Aircraft/C130/Nasal/damage.nas</file>
+	</damage> 
+ </nasal>
   
 </PropertyList>

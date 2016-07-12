@@ -75,7 +75,7 @@
    </location>
    <pointmass name="Payload">
     <description> 40068 LBS + full (39370 LBS) fuel should bring model up to entered max weight</description>
-    <weight unit="LBS">  20034.0 </weight>
+    <weight unit="LBS">  0 </weight>
     <location name="POINTMASS" unit="IN">
       <x> 600.40 </x>
       <y>   0.00 </y>
@@ -563,9 +563,9 @@
             <independentVar lookup="row">aero/alpha-rad</independentVar>
             <tableData>
               -0.20 -0.740
-               0.00  0.240
+               0.00  0.440
                0.24  1.400
-               0.60  0.704
+               0.60  0.904
             </tableData>
           </table>
       </product>
@@ -577,7 +577,7 @@
            <property>aero/qbar-psf</property>
            <property>metrics/Sw-sqft</property>
            <property>fcs/flap-pos-deg</property>
-           <value> 0.02500 </value>
+           <value> 0.03500 </value>
        </product>
     </function>
 
@@ -597,7 +597,7 @@
            <property>aero/qbar-psf</property>
            <property>metrics/Sw-sqft</property>
            <property>fcs/elevator-pos-rad</property>
-           <value>0.25</value>
+           <value>0.35</value>
        </product>
     </function>
 
@@ -615,9 +615,9 @@
             <tableData>
              -1.57    1.500
              -0.26    0.023
-              0.00    0.015
-              0.26    0.023
-              1.57    1.500
+              0.00    0.005
+              0.26    0.010
+              1.57    0.500
             </tableData>
           </table>
        </product>
@@ -629,7 +629,7 @@
            <property>aero/qbar-psf</property>
            <property>metrics/Sw-sqft</property>
            <property>aero/cl-squared</property>
-           <value>0.029</value>
+           <value>0.019</value>
          </product>
     </function>
 
@@ -666,7 +666,7 @@
            <property>aero/qbar-psf</property>
            <property>metrics/Sw-sqft</property>
            <property>gear/gear-pos-norm</property>
-           <value>0.023</value>
+           <value>0.013</value>
          </product>
     </function>
 
@@ -676,7 +676,7 @@
            <property>aero/qbar-psf</property>
            <property>metrics/Sw-sqft</property>
            <property>fcs/speedbrake-pos-norm</property>
-           <value>0.025</value>
+           <value>0.015</value>
          </product>
     </function>
 
@@ -704,7 +704,7 @@
            <property>aero/qbar-psf</property>
            <property>metrics/Sw-sqft</property>
            <abs><property>fcs/elevator-pos-norm</property></abs>
-           <value>0.03</value>
+           <value>0.01</value>
        </product>
     </function>
 

@@ -77,17 +77,5 @@
     </c130>
   </nasal>
  
-  <nasal>
-    <c130>
-      <file>Aircraft/C130/Nasal/damage.nas</file>
-    </c130>
-  </nasal>
- 
- <nasal>
-	<engines>
-		<file>Aircraft/C130/Nasal/engines.nas</file>
-	</engines>
- </nasal>	
-
 </PropertyList>
 
