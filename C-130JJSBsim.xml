@@ -94,7 +94,7 @@
    </location>
    <static_friction>  0.80 </static_friction>
    <dynamic_friction> 0.50 </dynamic_friction>
-   <rolling_friction> 0.02 </rolling_friction>
+   <rolling_friction> 0.05 </rolling_friction>
    <spring_coeff unit="LBS/FT">      46500.00 </spring_coeff>
    <damping_coeff unit="LBS/FT/SEC"> 77500.00 </damping_coeff>
    <max_steer unit="DEG"> 30.00 </max_steer>
@@ -550,7 +550,7 @@
 <tableData><!-- note that this is positive also when moving in reverse -->
 10.0 30.00
 20.0 25.00
-50.0 5.00
+50.0 15.00
 100.0 1.50
 150.0 0.75
 200.0 0.50 <!-- by this speed the front wheel hardly touches the runway -->
