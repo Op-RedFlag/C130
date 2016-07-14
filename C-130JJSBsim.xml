@@ -47,7 +47,7 @@
    <vtailarea unit="FT2">  313.56 </vtailarea>
    <vtailarm  unit="FT" >   48.95 </vtailarm>
    <location name="AERORP" unit="IN">
-     <x> 600.40 </x>
+     <x> 610.40 </x>
      <y>   0.00 </y>
      <z>   0.00 </z>
    </location>
@@ -97,7 +97,7 @@
    <rolling_friction> 0.02 </rolling_friction>
    <spring_coeff unit="LBS/FT">      46500.00 </spring_coeff>
    <damping_coeff unit="LBS/FT/SEC"> 77500.00 </damping_coeff>
-   <max_steer unit="DEG"> 5.00 </max_steer>
+   <max_steer unit="DEG"> 30.00 </max_steer>
    <brake_group>NONE</brake_group>
    <retractable>1</retractable>
   </contact>
@@ -136,26 +136,26 @@
 
   <contact type="STRUCTURE" name="LEFT_WING">
     <location unit="IN">
-     <x> 587.40 </x>
+     <x> 600.40 </x>
      <y> -66.35 </y>
      <z> -29.37 </z>
     </location>
     <static_friction>  1.00 </static_friction>
     <dynamic_friction> 1.00 </dynamic_friction>
     <spring_coeff unit="LBS/FT">      155000.00 </spring_coeff>
-    <damping_coeff unit="LBS/FT/SEC"> 155000.00 </damping_coeff>
+    <damping_coeff unit="LBS/FT/SEC"> 100000.00 </damping_coeff>
   </contact>
 
   <contact type="STRUCTURE" name="RIGHT_WING">
     <location unit="IN">
-     <x> 587.40 </x>
+     <x> 600.40 </x>
      <y>  66.35 </y>
      <z> -29.37 </z>
     </location>
     <static_friction>  1.00 </static_friction>
     <dynamic_friction> 1.00 </dynamic_friction>
     <spring_coeff unit="LBS/FT">      155000.00 </spring_coeff>
-    <damping_coeff unit="LBS/FT/SEC"> 155000.00 </damping_coeff>
+    <damping_coeff unit="LBS/FT/SEC"> 100000.00 </damping_coeff>
   </contact>
 
  </ground_reactions>
@@ -164,7 +164,7 @@
 
    <engine file="AE2100D3">
     <location unit="IN">
-      <x> 587.40 </x>
+      <x> 600.40 </x>
       <y> -265.40 </y>
       <z> -40.00 </z>
     </location>
@@ -177,7 +177,7 @@
     <feed>4</feed>
     <thruster file="R391">
      <location unit="IN">
-       <x> 587.40 </x>
+       <x> 600.40 </x>
        <y> -265.40 </y>
        <z> -40.00 </z>
      </location>
@@ -191,7 +191,7 @@
 
    <engine file="AE2100D3">
     <location unit="IN">
-      <x> 587.40 </x>
+      <x> 610.40 </x>
       <y> -265.40 </y>
       <z> -40.00 </z>
     </location>
@@ -204,7 +204,7 @@
     <feed>4</feed>
     <thruster file="R391">
      <location unit="IN">
-       <x> 587.40 </x>
+       <x> 610.40 </x>
        <y> -265.40 </y>
        <z> -40.00 </z>
      </location>
@@ -218,7 +218,7 @@
 
    <engine file="AE2100D3">
     <location unit="IN">
-      <x> 587.40 </x>
+      <x> 610.40 </x>
       <y> 265.40 </y>
       <z> -40.00 </z>
     </location>
@@ -231,7 +231,7 @@
     <feed>4</feed>
     <thruster file="R391">
      <location unit="IN">
-       <x> 587.40 </x>
+       <x> 60.40 </x>
        <y> 265.40 </y>
        <z> -40.00 </z>
      </location>
@@ -245,7 +245,7 @@
 
    <engine file="AE2100D3">
     <location unit="IN">
-      <x> 587.40 </x>
+      <x> 610.40 </x>
       <y> 265.40 </y>
       <z> -40.00 </z>
     </location>
@@ -258,7 +258,7 @@
     <feed>4</feed>
     <thruster file="R391">
      <location unit="IN">
-       <x> 587.40 </x>
+       <x> 610.40 </x>
        <y> 265.40 </y>
        <z> -40.00 </z>
      </location>
@@ -452,8 +452,8 @@
    <aerosurface_scale name="Rudder Control">
       <input>fcs/rudder-sum</input>
       <domain>
-        <min> -1.1 </min>
-        <max>  1.1 </max>
+        <min> -2.1 </min>
+        <max>  2.1 </max>
       </domain>
       <range>
         <min> -0.35 </min>
@@ -527,6 +527,37 @@
      </traverse>
      <output>gear/gear-pos-norm</output>
    </kinematic>
+
+<kinematic name="names/nose-wheel-steering/kinematic-norm">
+<input>fcs/steer-cmd-norm</input>
+<traverse>
+<setting>
+<position>-1.0</position>
+<time>0.0</time>
+</setting>
+<setting>
+<position>1.0</position>
+<time>0.5</time>
+</setting>
+</traverse>
+<output>gear/unit[0]/nose-wheel-steering/kinematic-norm</output>
+</kinematic>
+
+<scheduled_gain name="names/nose-wheel-steering/steer-pos-deg">
+<input>gear/unit[0]/nose-wheel-steering/kinematic-norm</input>
+<table>
+<independentVar>velocities/vg-fps</independentVar>
+<tableData><!-- note that this is positive also when moving in reverse -->
+10.0 30.00
+20.0 25.00
+50.0 5.00
+100.0 1.50
+150.0 0.75
+200.0 0.50 <!-- by this speed the front wheel hardly touches the runway -->
+</tableData>
+</table>
+<output>fcs/steer-pos-deg</output>
+</scheduled_gain>
 
   </channel>
 
@@ -616,7 +647,7 @@
              -1.57    1.500
              -0.26    0.023
               0.00    0.005
-              0.26    0.010
+              0.26    0.025
               1.57    0.500
             </tableData>
           </table>
@@ -629,7 +660,7 @@
            <property>aero/qbar-psf</property>
            <property>metrics/Sw-sqft</property>
            <property>aero/cl-squared</property>
-           <value>0.019</value>
+           <value>0.029</value>
          </product>
     </function>
 
@@ -642,7 +673,7 @@
             <independentVar lookup="row">velocities/mach</independentVar>
             <tableData>
                 0.00      0.000
-                0.7      0.000
+                0.7       0.005
                 1.10      0.023
                 1.80      0.015
             </tableData>

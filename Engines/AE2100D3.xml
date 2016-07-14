@@ -23,9 +23,9 @@
 <turboprop_engine name="AE2100D3">
   <milthrust unit="LBS">       10386.9   </milthrust>
   <idlen1>                       60.0   </idlen1>
-  <maxn1>                       100.0   </maxn1>
+  <maxn1>                       120.0   </maxn1>
   <maxpower unit="HP">         4637.0   </maxpower>
-  <psfc unit="LBS/HR/HP">         0.454 </psfc>
+  <psfc unit="LBS/HR/HP">         0.754 </psfc>
   <n1idle_max_delay>              1     </n1idle_max_delay>
   <maxstartingtime>              20     </maxstartingtime>
   <startern1>                    20     </startern1>
