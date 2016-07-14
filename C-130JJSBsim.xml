@@ -90,7 +90,7 @@
    <location unit="IN">
      <x> 152.72 </x>
      <y>   0.00 </y>
-     <z> -39.98 </z>
+     <z> -41.98 </z>
    </location>
    <static_friction>  0.80 </static_friction>
    <dynamic_friction> 0.50 </dynamic_friction>
@@ -548,8 +548,13 @@
 <table>
 <independentVar>velocities/vg-fps</independentVar>
 <tableData><!-- note that this is positive also when moving in reverse -->
-10.0 30.00
-20.0 25.00
+5.0 5.00
+10.0 10.00
+15.0 20.00
+20.0 30.00
+25.0 30.00
+30.0 30.00
+35.0 20.00
 50.0 15.00
 100.0 1.50
 150.0 0.75
